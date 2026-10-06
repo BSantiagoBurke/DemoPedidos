@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1f6f5c;
+  --on-primary: #ffffff;
+  --primary-ink: #1f6f5c;
+  --accent: #f2b134;
+  --on-accent: #1a1a1a;
+  --surface: #ffffff;
+  --page: #f6f4f1;
+  --ink: #1c1917;
+  --muted: #57534e;
+  --line: #e7e5e4;
+  color-scheme: light;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-on-primary: var(--on-primary);
+  --color-primary-ink: var(--primary-ink);
+  --color-accent: var(--accent);
+  --color-on-accent: var(--on-accent);
+  --color-surface: var(--surface);
+  --color-page: var(--page);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+
+body {
+  background: var(--page);
+  color: var(--ink);
+  overflow-x: hidden;
+}
+
+:focus-visible {
+  outline: 3px solid var(--primary-ink);
+  outline-offset: 2px;
+}
+
+/* Tintes del color de marca */
+.bg-primary-soft { background: color-mix(in srgb, var(--primary) 10%, white); }
+.bg-accent-soft { background: color-mix(in srgb, var(--accent) 22%, white); }
+
+/* Bottom sheet nativo (<dialog>) */
+dialog.sheet {
+  margin: auto auto 0;
+  width: 100%;
+  max-width: 100%;
+  max-height: 92dvh;
+  border: 0;
+  padding: 0;
+  border-radius: 1.25rem 1.25rem 0 0;
+  background: var(--surface);
+  color: var(--ink);
+  overscroll-behavior: contain;
+}
+@media (min-width: 640px) {
+  dialog.sheet {
+    margin: auto;
+    max-width: 32rem;
+    border-radius: 1.25rem;
+  }
+}
+dialog.sheet::backdrop { background: rgb(0 0 0 / 0.45); }
+@media (prefers-reduced-motion: no-preference) {
+  dialog.sheet[open] { animation: sheet-in 0.22s ease-out; }
+}
+@keyframes sheet-in {
+  from { transform: translateY(24px); opacity: 0.6; }
+}
+
+/* Scrollspy de categorías: aria-current lo maneja React con IntersectionObserver
+   (scroll-target-group / :target-current todavía no existen en Safari ni Firefox). */
+.category-nav { scrollbar-width: none; }
+.category-nav::-webkit-scrollbar { display: none; }
+.category-nav a[aria-current="true"] {
+  background: var(--primary);
+  color: var(--on-primary);
+  border-color: var(--primary);
+}
+
+.pb-safe { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
