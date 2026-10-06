@@ -1,0 +1,130 @@
+{
+  "slug": "template-pedidos",
+  "type": "pedidos",
+  "name": "Nombre del negocio",
+  "tagline": "Frase corta (opcional)",
+  "logo": "/tenants/_template-pedidos/logo.svg",
+  "colors": {
+    "primary": "#1F6F5C",
+    "accent": "#F2B134"
+  },
+  "adminPin": "1234",
+  "pedidoMinimo": 0,
+  "tiempoEstimadoMin": [
+    30,
+    45
+  ],
+  "modalidades": [
+    "delivery",
+    "retiro"
+  ],
+  "mediosPago": [
+    "Efectivo",
+    "Transferencia",
+    "Mercado Pago"
+  ],
+  "sucursales": [
+    {
+      "id": "principal",
+      "name": "Principal",
+      "address": "Dirección, San Miguel de Tucumán",
+      "whatsapp": "5493810000000",
+      "hours": {
+        "0": {
+          "open": "10:00",
+          "close": "22:00"
+        },
+        "1": {
+          "open": "10:00",
+          "close": "22:00"
+        },
+        "2": {
+          "open": "10:00",
+          "close": "22:00"
+        },
+        "3": {
+          "open": "10:00",
+          "close": "22:00"
+        },
+        "4": {
+          "open": "10:00",
+          "close": "22:00"
+        },
+        "5": {
+          "open": "10:00",
+          "close": "22:00"
+        },
+        "6": {
+          "open": "10:00",
+          "close": "22:00"
+        }
+      },
+      "zonas": [
+        {
+          "id": "zona-1",
+          "name": "Zona cercana",
+          "costoEnvio": 1500
+        },
+        {
+          "id": "zona-2",
+          "name": "Zona lejana",
+          "costoEnvio": 2500
+        }
+      ]
+    }
+  ],
+  "categorias": [
+    {
+      "id": "principales",
+      "name": "Principales"
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas"
+    }
+  ],
+  "productos": [
+    {
+      "id": "producto-1",
+      "categoriaId": "principales",
+      "name": "Producto con variantes",
+      "description": "Descripción corta.",
+      "price": 5000,
+      "variantes": [
+        {
+          "id": "tamano",
+          "name": "Tamaño",
+          "required": true,
+          "options": [
+            {
+              "id": "chico",
+              "label": "Chico",
+              "priceDelta": 0
+            },
+            {
+              "id": "grande",
+              "label": "Grande",
+              "priceDelta": 2500
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "producto-2",
+      "categoriaId": "principales",
+      "name": "Producto simple",
+      "description": "Descripción corta.",
+      "price": 4000,
+      "disponible": true
+    },
+    {
+      "id": "bebida-1",
+      "categoriaId": "bebidas",
+      "name": "Bebida",
+      "price": 2000,
+      "disponible": true
+    }
+  ]
+}

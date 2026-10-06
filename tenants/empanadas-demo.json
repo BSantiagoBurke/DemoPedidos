@@ -1,0 +1,447 @@
+{
+  "slug": "empanadas-demo",
+  "type": "pedidos",
+  "name": "Empanadas del Cerro",
+  "tagline": "Empanadas tucumanas al horno de barro",
+  "logo": "/tenants/empanadas-demo/logo.svg",
+  "colors": {
+    "primary": "#6B3410",
+    "accent": "#D98E2B"
+  },
+  "adminPin": "1234",
+  "pedidoMinimo": 0,
+  "tiempoEstimadoMin": [
+    30,
+    45
+  ],
+  "modalidades": [
+    "delivery",
+    "retiro"
+  ],
+  "mediosPago": [
+    "Efectivo",
+    "Transferencia",
+    "Mercado Pago"
+  ],
+  "sucursales": [
+    {
+      "id": "centro",
+      "name": "Centro",
+      "address": "24 de Septiembre 650, San Miguel de Tucumán",
+      "whatsapp": "5493815550201",
+      "hours": {
+        "0": {
+          "open": "10:00",
+          "close": "23:30"
+        },
+        "1": {
+          "open": "10:00",
+          "close": "23:30"
+        },
+        "2": {
+          "open": "10:00",
+          "close": "23:30"
+        },
+        "3": {
+          "open": "10:00",
+          "close": "23:30"
+        },
+        "4": {
+          "open": "10:00",
+          "close": "23:30"
+        },
+        "5": {
+          "open": "10:00",
+          "close": "23:30"
+        },
+        "6": {
+          "open": "10:00",
+          "close": "23:30"
+        }
+      },
+      "zonas": [
+        {
+          "id": "microcentro",
+          "name": "Microcentro",
+          "costoEnvio": 1200
+        },
+        {
+          "id": "barrio-norte",
+          "name": "Barrio Norte",
+          "costoEnvio": 1800
+        },
+        {
+          "id": "barrio-sur",
+          "name": "Barrio Sur",
+          "costoEnvio": 1800
+        },
+        {
+          "id": "ciudadela",
+          "name": "Ciudadela",
+          "costoEnvio": 2200
+        }
+      ]
+    },
+    {
+      "id": "yerba-buena",
+      "name": "Yerba Buena",
+      "address": "Av. Aconquija 1800, Yerba Buena",
+      "whatsapp": "5493815550202",
+      "hours": {
+        "0": {
+          "open": "19:00",
+          "close": "00:30"
+        },
+        "1": null,
+        "2": {
+          "open": "19:00",
+          "close": "00:30"
+        },
+        "3": {
+          "open": "19:00",
+          "close": "00:30"
+        },
+        "4": {
+          "open": "19:00",
+          "close": "00:30"
+        },
+        "5": {
+          "open": "19:00",
+          "close": "01:00"
+        },
+        "6": {
+          "open": "19:00",
+          "close": "01:00"
+        }
+      },
+      "zonas": [
+        {
+          "id": "yb-centro",
+          "name": "Yerba Buena centro",
+          "costoEnvio": 1500
+        },
+        {
+          "id": "san-javier",
+          "name": "Camino a San Javier",
+          "costoEnvio": 3000
+        },
+        {
+          "id": "marti-coll",
+          "name": "Martí Coll",
+          "costoEnvio": 2000
+        }
+      ]
+    },
+    {
+      "id": "barrio-sur",
+      "name": "Barrio Sur",
+      "address": "Av. Roca 1100, San Miguel de Tucumán",
+      "whatsapp": "5493815550203",
+      "hours": {
+        "0": null,
+        "1": {
+          "open": "11:00",
+          "close": "23:00"
+        },
+        "2": {
+          "open": "11:00",
+          "close": "23:00"
+        },
+        "3": {
+          "open": "11:00",
+          "close": "23:00"
+        },
+        "4": {
+          "open": "11:00",
+          "close": "23:00"
+        },
+        "5": {
+          "open": "11:00",
+          "close": "23:30"
+        },
+        "6": {
+          "open": "11:00",
+          "close": "23:30"
+        }
+      },
+      "zonas": [
+        {
+          "id": "barrio-sur",
+          "name": "Barrio Sur",
+          "costoEnvio": 1000
+        },
+        {
+          "id": "villa-9-julio",
+          "name": "Villa 9 de Julio",
+          "costoEnvio": 1800
+        },
+        {
+          "id": "terminal",
+          "name": "Zona terminal",
+          "costoEnvio": 1500
+        }
+      ]
+    }
+  ],
+  "categorias": [
+    {
+      "id": "empanadas",
+      "name": "Empanadas"
+    },
+    {
+      "id": "especiales",
+      "name": "Especiales"
+    },
+    {
+      "id": "bebidas",
+      "name": "Bebidas"
+    },
+    {
+      "id": "postres",
+      "name": "Postres"
+    }
+  ],
+  "productos": [
+    {
+      "id": "carne-cuchillo",
+      "categoriaId": "empanadas",
+      "name": "Carne cortada a cuchillo",
+      "description": "La clásica tucumana: carne, cebolla de verdeo y huevo.",
+      "price": 5000,
+      "variantes": [
+        {
+          "id": "cantidad",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "media",
+              "label": "Media docena",
+              "priceDelta": 0
+            },
+            {
+              "id": "docena",
+              "label": "Docena",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "pollo",
+      "categoriaId": "empanadas",
+      "name": "Pollo",
+      "description": "Pollo desmenuzado con morrón y especias.",
+      "price": 4800,
+      "variantes": [
+        {
+          "id": "cantidad",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "media",
+              "label": "Media docena",
+              "priceDelta": 0
+            },
+            {
+              "id": "docena",
+              "label": "Docena",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "jamon-queso",
+      "categoriaId": "empanadas",
+      "name": "Jamón y queso",
+      "description": "Con mozzarella y orégano.",
+      "price": 4800,
+      "variantes": [
+        {
+          "id": "cantidad",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "media",
+              "label": "Media docena",
+              "priceDelta": 0
+            },
+            {
+              "id": "docena",
+              "label": "Docena",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "humita",
+      "categoriaId": "empanadas",
+      "name": "Humita",
+      "description": "Choclo cremoso con queso y albahaca.",
+      "price": 4800,
+      "variantes": [
+        {
+          "id": "cantidad",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "media",
+              "label": "Media docena",
+              "priceDelta": 0
+            },
+            {
+              "id": "docena",
+              "label": "Docena",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "picante",
+      "categoriaId": "empanadas",
+      "name": "Carne picante",
+      "description": "Carne cortada a cuchillo con ají molido.",
+      "price": 5000,
+      "variantes": [
+        {
+          "id": "cantidad",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "media",
+              "label": "Media docena",
+              "priceDelta": 0
+            },
+            {
+              "id": "docena",
+              "label": "Docena",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "arabe",
+      "categoriaId": "empanadas",
+      "name": "Árabes",
+      "description": "Carne, tomate y limón, cerradas en triángulo.",
+      "price": 5200,
+      "variantes": [
+        {
+          "id": "cantidad",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "media",
+              "label": "Media docena",
+              "priceDelta": 0
+            },
+            {
+              "id": "docena",
+              "label": "Docena",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": false
+    },
+    {
+      "id": "humita-chala",
+      "categoriaId": "especiales",
+      "name": "Humita en chala",
+      "description": "Porción individual, receta del valle.",
+      "price": 3800,
+      "disponible": true
+    },
+    {
+      "id": "tamales",
+      "categoriaId": "especiales",
+      "name": "Tamales",
+      "description": "Dos unidades, de carne y maíz.",
+      "price": 4600,
+      "disponible": true
+    },
+    {
+      "id": "gaseosa",
+      "categoriaId": "bebidas",
+      "name": "Gaseosa 1,5 L",
+      "description": "Elegí el sabor.",
+      "price": 3500,
+      "variantes": [
+        {
+          "id": "sabor",
+          "name": "Sabor",
+          "required": true,
+          "options": [
+            {
+              "id": "cola",
+              "label": "Cola",
+              "priceDelta": 0
+            },
+            {
+              "id": "lima-limon",
+              "label": "Lima limón",
+              "priceDelta": 0
+            },
+            {
+              "id": "naranja",
+              "label": "Naranja",
+              "priceDelta": 0
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "cerveza",
+      "categoriaId": "bebidas",
+      "name": "Cerveza rubia 1 L",
+      "description": "Bien fría.",
+      "price": 4200,
+      "disponible": true
+    },
+    {
+      "id": "agua",
+      "categoriaId": "bebidas",
+      "name": "Agua sin gas 500 ml",
+      "price": 1300,
+      "disponible": true
+    },
+    {
+      "id": "quesillo",
+      "categoriaId": "postres",
+      "name": "Quesillo con miel de caña",
+      "description": "Clásico de los valles tucumanos.",
+      "price": 3900,
+      "disponible": true
+    },
+    {
+      "id": "pastelitos",
+      "categoriaId": "postres",
+      "name": "Pastelitos de membrillo",
+      "description": "Seis unidades, fritos y con almíbar.",
+      "price": 4200,
+      "disponible": true
+    }
+  ]
+}

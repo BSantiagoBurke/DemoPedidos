@@ -1,0 +1,326 @@
+{
+  "slug": "pastas-demo",
+  "type": "pedidos",
+  "name": "Pastificio Aurora",
+  "tagline": "Pastas frescas hechas cada mañana",
+  "logo": "/tenants/pastas-demo/logo.svg",
+  "colors": {
+    "primary": "#A63D2A",
+    "accent": "#E8B04B"
+  },
+  "adminPin": "1234",
+  "pedidoMinimo": 8000,
+  "tiempoEstimadoMin": [
+    40,
+    60
+  ],
+  "modalidades": [
+    "delivery",
+    "retiro"
+  ],
+  "mediosPago": [
+    "Efectivo",
+    "Transferencia",
+    "Mercado Pago"
+  ],
+  "sucursales": [
+    {
+      "id": "central",
+      "name": "Casa central",
+      "address": "Av. Belgrano 2450, San Miguel de Tucumán",
+      "whatsapp": "5493815550101",
+      "hours": {
+        "0": {
+          "open": "09:30",
+          "close": "14:30"
+        },
+        "1": null,
+        "2": {
+          "open": "09:30",
+          "close": "22:00"
+        },
+        "3": {
+          "open": "09:30",
+          "close": "22:00"
+        },
+        "4": {
+          "open": "09:30",
+          "close": "22:00"
+        },
+        "5": {
+          "open": "09:30",
+          "close": "22:30"
+        },
+        "6": {
+          "open": "09:30",
+          "close": "22:30"
+        }
+      },
+      "zonas": [
+        {
+          "id": "centro",
+          "name": "Centro",
+          "costoEnvio": 1500
+        },
+        {
+          "id": "barrio-norte",
+          "name": "Barrio Norte",
+          "costoEnvio": 2000
+        },
+        {
+          "id": "yerba-buena",
+          "name": "Yerba Buena",
+          "costoEnvio": 3500
+        }
+      ]
+    }
+  ],
+  "categorias": [
+    {
+      "id": "frescas",
+      "name": "Pastas frescas"
+    },
+    {
+      "id": "rellenas",
+      "name": "Rellenas"
+    },
+    {
+      "id": "salsas",
+      "name": "Salsas"
+    },
+    {
+      "id": "postres",
+      "name": "Postres"
+    }
+  ],
+  "productos": [
+    {
+      "id": "tallarines",
+      "categoriaId": "frescas",
+      "name": "Tallarines al huevo",
+      "description": "Amasados a mano con huevos de campo.",
+      "price": 4600,
+      "variantes": [
+        {
+          "id": "tamano",
+          "name": "Tamaño",
+          "required": true,
+          "options": [
+            {
+              "id": "medio",
+              "label": "1/2 kg",
+              "priceDelta": 0
+            },
+            {
+              "id": "kilo",
+              "label": "1 kg",
+              "priceDelta": 4000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "noquis",
+      "categoriaId": "frescas",
+      "name": "Ñoquis de papa",
+      "description": "Livianos, de papa y sémola.",
+      "price": 4200,
+      "variantes": [
+        {
+          "id": "tamano",
+          "name": "Tamaño",
+          "required": true,
+          "options": [
+            {
+              "id": "medio",
+              "label": "1/2 kg",
+              "priceDelta": 0
+            },
+            {
+              "id": "kilo",
+              "label": "1 kg",
+              "priceDelta": 3300
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "fettuccine-espinaca",
+      "categoriaId": "frescas",
+      "name": "Fettuccine de espinaca",
+      "description": "Con espinaca fresca en la masa.",
+      "price": 4800,
+      "variantes": [
+        {
+          "id": "tamano",
+          "name": "Tamaño",
+          "required": true,
+          "options": [
+            {
+              "id": "medio",
+              "label": "1/2 kg",
+              "priceDelta": 0
+            },
+            {
+              "id": "kilo",
+              "label": "1 kg",
+              "priceDelta": 4200
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "ravioles",
+      "categoriaId": "rellenas",
+      "name": "Ravioles de verdura y ricota",
+      "description": "Caja de 48 unidades.",
+      "price": 7200,
+      "variantes": [
+        {
+          "id": "cajas",
+          "name": "Cantidad",
+          "required": true,
+          "options": [
+            {
+              "id": "una",
+              "label": "1 caja",
+              "priceDelta": 0
+            },
+            {
+              "id": "dos",
+              "label": "2 cajas",
+              "priceDelta": 7000
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "sorrentinos",
+      "categoriaId": "rellenas",
+      "name": "Sorrentinos",
+      "description": "Caja de 24 unidades, masa fina.",
+      "price": 8900,
+      "variantes": [
+        {
+          "id": "relleno",
+          "name": "Relleno",
+          "required": true,
+          "options": [
+            {
+              "id": "jyq",
+              "label": "Jamón y queso",
+              "priceDelta": 0
+            },
+            {
+              "id": "calabaza",
+              "label": "Calabaza y queso",
+              "priceDelta": 0
+            },
+            {
+              "id": "cuatro-quesos",
+              "label": "Cuatro quesos",
+              "priceDelta": 600
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    },
+    {
+      "id": "canelones",
+      "categoriaId": "rellenas",
+      "name": "Canelones de verdura",
+      "description": "Bandeja de 6, listos para el horno.",
+      "price": 9800,
+      "disponible": false
+    },
+    {
+      "id": "lasana",
+      "categoriaId": "rellenas",
+      "name": "Lasaña bolognesa",
+      "description": "Bandeja familiar, rinde 3 o 4 porciones.",
+      "price": 14500,
+      "disponible": true
+    },
+    {
+      "id": "salsa-fileto",
+      "categoriaId": "salsas",
+      "name": "Salsa fileto",
+      "description": "Tomate perita, ajo y albahaca. 300 cc.",
+      "price": 3200,
+      "disponible": true
+    },
+    {
+      "id": "salsa-bolognesa",
+      "categoriaId": "salsas",
+      "name": "Salsa bolognesa",
+      "description": "Cocción lenta, carne picada especial. 300 cc.",
+      "price": 4500,
+      "disponible": true
+    },
+    {
+      "id": "salsa-cuatro-quesos",
+      "categoriaId": "salsas",
+      "name": "Salsa cuatro quesos",
+      "description": "Cremosa, para rellenas. 300 cc.",
+      "price": 4900,
+      "disponible": true
+    },
+    {
+      "id": "pesto",
+      "categoriaId": "salsas",
+      "name": "Pesto de albahaca",
+      "description": "Con nueces y queso duro. 200 cc.",
+      "price": 3800,
+      "disponible": true
+    },
+    {
+      "id": "tiramisu",
+      "categoriaId": "postres",
+      "name": "Tiramisú",
+      "description": "Porción individual.",
+      "price": 4500,
+      "disponible": true
+    },
+    {
+      "id": "flan",
+      "categoriaId": "postres",
+      "name": "Flan casero",
+      "description": "Con dulce de leche o crema.",
+      "price": 3600,
+      "variantes": [
+        {
+          "id": "acompanamiento",
+          "name": "Acompañamiento",
+          "required": false,
+          "options": [
+            {
+              "id": "ddl",
+              "label": "Dulce de leche",
+              "priceDelta": 0
+            },
+            {
+              "id": "crema",
+              "label": "Crema",
+              "priceDelta": 0
+            },
+            {
+              "id": "mixto",
+              "label": "Mixto",
+              "priceDelta": 400
+            }
+          ]
+        }
+      ],
+      "disponible": true
+    }
+  ]
+}
